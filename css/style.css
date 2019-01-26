@@ -1,0 +1,18 @@
+
+body{
+	background-color:ccc;
+}
+.main-container{
+width:80vh;
+margin:auto;
+	
+}
+
+
+.hi{
+	font-family:sans-serif;
+	font-size: 10em;
+	color:white;
+	text-align:center;
+}
+
