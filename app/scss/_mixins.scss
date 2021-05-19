@@ -1,0 +1,21 @@
+
+// definimos nuestros breakpoints para diseño responsive 640 px, 1024px, 1400px
+//scss maps
+$breakpoints-up: ( "med":"40em", "lg":"64em", "xlg":"87,5em");
+$breakpoints-down: ("sm":"639px" ,"med":"1023px", "lg":"1399px");
+
+// Creamos el mixin
+
+@mixin breakpoint-up($size){
+
+    @media(min-width: map-get($breakpoints-up,$size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size){
+
+    @media(max-width: map-get($breakpoints-down,$size)){
+        @content;
+    }
+}

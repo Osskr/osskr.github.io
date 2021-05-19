@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+:root{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before{
+    box-sizing: inherit;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color:$darkBlue;
+    color: $fc-primary;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+.button{
+
+    border: 1px solid $lightCyan;
+    border-radius: 5px;
+    padding: 2px 6px;
+    color:white;
+    text-decoration: none;
+ 
+    &__cta{
+        padding: 10px 30px;
+        font-size: 1rem;
+        margin-top: 1rem;
+        display: inline-block;
+
+    }
+}
+
+//visibility
+.hide-for-mobile{
+    //hide for tablet and mobile
+    //@include lo usamos para llamar al mixin
+    @include breakpoint-down(med){
+        display:none;
+    }
+}
+
+.hide-for-desktop{
+    //hide for desktop viewport widths
+    @include breakpoint-up(lg){
+        display:none;
+    }
+}
+
+
+
+.container{
+
+    margin: 0 auto;
+    max-width: 67.5rem ;
+   
+
+    &--pd-all{
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    &--pd-y{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &--pd-x{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    &--pd-t{
+      padding-top: 1.5rem;
+    }
+
+    &--pd-r{
+        padding-right: 1.5rem;
+    }
+
+    &--pd-b{
+        padding-bottom: 1.5rem;
+    }
+    
+    &--pd-l{
+        padding-left: 1.5rem;
+    }
+}
