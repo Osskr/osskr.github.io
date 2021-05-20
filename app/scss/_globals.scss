@@ -98,3 +98,24 @@ body {
         padding-left: 1.5rem;
     }
 }
+
+a{
+    &:link{
+        color: $fc-primary;
+
+    }
+
+    &:visited{
+        color: $fc-primary;
+    }
+
+    &:hover{
+        color:$fc-secondary;}
+}
+
+
+
+.font-alt{
+    font-family: 'Share Tech Mono', monospace;
+    color: $fc-secondary;
+}

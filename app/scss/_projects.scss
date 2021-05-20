@@ -50,18 +50,16 @@
     &__tecnologies{
        
         
-        font-family: 'Share Tech Mono', monospace;
-
+       
         ul{
             display: flex;
             text-decoration: none;
             list-style: none;
             padding: 0;
-            color: $fc-secondary;
         }
 
         li{
-            padding: 0 .3rem;
+            padding: 0 .2rem;
         &:not(:last-child)::after{
             
             content:',';

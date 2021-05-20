@@ -11,5 +11,16 @@
         border-radius: 10px;
     }
 
+    &__skills{
+        display: flex;
 
+      ul{
+          list-style: none;
+      }
+
+      li::before{
+          content:'>';
+          margin-right: .2rem;
+      }
+    }
 }

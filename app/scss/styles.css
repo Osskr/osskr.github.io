@@ -93,6 +93,21 @@ body.no-scroll {
   padding-left: 1.5rem;
 }
 
+a:link {
+  color: #ecedf1;
+}
+a:visited {
+  color: #ecedf1;
+}
+a:hover {
+  color: #6bbbf5;
+}
+
+.font-alt {
+  font-family: "Share Tech Mono", monospace;
+  color: #6bbbf5;
+}
+
 .header.open .header__toggle-button span:first-child {
   transform: rotate(45deg);
 }
@@ -205,9 +220,6 @@ body.no-scroll {
   color: #1b3855;
 }
 
-.hero {
-  height: 80vh;
-}
 .hero h4 {
   margin: 0;
   font-weight: 100;
@@ -254,18 +266,14 @@ body.no-scroll {
   font-size: 2rem;
   font-weight: 400;
 }
-.item__tecnologies {
-  font-family: "Share Tech Mono", monospace;
-}
 .item__tecnologies ul {
   display: flex;
   text-decoration: none;
   list-style: none;
   padding: 0;
-  color: #6bbbf5;
 }
 .item__tecnologies li {
-  padding: 0 0.3rem;
+  padding: 0 0.2rem;
 }
 .item__tecnologies li:not(:last-child)::after {
   content: ",";
@@ -279,6 +287,16 @@ body.no-scroll {
   background-size: 350px;
   border-radius: 10px;
 }
+.about__skills {
+  display: flex;
+}
+.about__skills ul {
+  list-style: none;
+}
+.about__skills li::before {
+  content: ">";
+  margin-right: 0.2rem;
+}
 
 .contact__links {
   font-size: 2.5rem;
@@ -286,6 +304,9 @@ body.no-scroll {
   justify-content: center;
   align-items: center;
 }
+.contact__links a:hover {
+  border-radius: 0.5rem;
+}
 .contact__item {
-  margin: 0.5rem 0.7rem;
+  padding: 0.5rem 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
