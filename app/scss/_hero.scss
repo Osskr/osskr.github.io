@@ -1,20 +1,24 @@
 .hero{
     
-  
+    height: 100%;
+    padding-top: 10vh;
+    overflow: hidden;
+    padding-bottom: 10vh;
   
    
     &__text{
         
     }
 
-    h4{
+    &__title__upper{
+
         margin:0;
         font-weight: 100;
         color: $lightCyan;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
-    h1{
+    &__title__main{
         margin:0;
         padding-bottom: 10px;
         font-weight: 600;

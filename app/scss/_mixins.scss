@@ -19,3 +19,8 @@ $breakpoints-down: ("sm":"639px" ,"med":"1023px", "lg":"1399px");
         @content;
     }
 }
+
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}

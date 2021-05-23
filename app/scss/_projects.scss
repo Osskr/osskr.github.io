@@ -36,6 +36,7 @@
     
         display: flex;
         align-items: center;
+    
     }
 
     &__title{
@@ -49,8 +50,7 @@
 
     &__tecnologies{
        
-        
-       
+               
         ul{
             display: flex;
             text-decoration: none;
@@ -60,10 +60,11 @@
 
         li{
             padding: 0 .2rem;
-        &:not(:last-child)::after{
-            
-            content:',';
-        }
+           
+            &:not(:last-child)::after{
+                
+                content:',';
+            }
         }
 
 

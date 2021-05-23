@@ -96,9 +96,6 @@ body.no-scroll {
 a:link {
   color: #ecedf1;
 }
-a:visited {
-  color: #ecedf1;
-}
 a:hover {
   color: #6bbbf5;
 }
@@ -220,13 +217,19 @@ a:hover {
   color: #1b3855;
 }
 
-.hero h4 {
+.hero {
+  height: 100%;
+  padding-top: 10vh;
+  overflow: hidden;
+  padding-bottom: 10vh;
+}
+.hero__title__upper {
   margin: 0;
   font-weight: 100;
   color: #b3f7ff;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
-.hero h1 {
+.hero__title__main {
   margin: 0;
   padding-bottom: 10px;
   font-weight: 600;

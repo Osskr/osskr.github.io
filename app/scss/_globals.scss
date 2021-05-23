@@ -105,9 +105,7 @@ a{
 
     }
 
-    &:visited{
-        color: $fc-primary;
-    }
+  
 
     &:hover{
         color:$fc-secondary;}
@@ -116,6 +114,6 @@ a{
 
 
 .font-alt{
-    font-family: 'Share Tech Mono', monospace;
-    color: $fc-secondary;
+     font-family: 'Share Tech Mono', monospace;
+        color: $fc-secondary;
 }
